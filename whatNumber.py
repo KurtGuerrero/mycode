@@ -9,7 +9,7 @@ message = "You have 5 chances to guess the number in my head. It's between 1 and
 mynumber = random.randint(1, 7)
 counter = 0
 print(counter)
-print(mynumber)
+print(mynumber) # debug only
 
 """ let's get started"""
 def main():
@@ -18,11 +18,12 @@ def main():
     print(message)
     counter = counter + 1 #increase by 1
     print("1." + str(counter))
-    yourguess = input("What is your guess?\n>")
+    yourguess = input("What is your guess?\n>") # ADD validation that this is a valid entry
     # yourguess = 
 
-    print("My number is: " + str(mynumber))
-    print("Your guess is: " + str(yourguess))
+    print("My number is: " + str(mynumber)) #debug only
+    print("Your guess is: " + str(yourguess)) # add to previous attempt list and then use that list for next guess messages.
+    # print Did you mean to guess that number again? if repeated value
 
     if yourguess == mynumber:
         print("You are Correct!")
